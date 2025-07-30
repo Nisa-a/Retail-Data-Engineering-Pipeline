@@ -21,15 +21,15 @@ The final result is a clean and integrated dataset that supports meaningful busi
 
 **Source:** Kaggle (3 separate datasets)
 
-- `customer_shopping_data.csv`: Contains demographic and transactional behavior of retail customers
-- `scanner_data.csv`: Contains item-level sales transaction data
-- `data.csv`: Contains retail inventory details like size, department, and units
+- `customer_shopping_data.csv` (https://www.kaggle.com/datasets/mehmettahiraslan/customer-shopping-dataset/data): Contains demographic and transactional behavior of retail customers
+- `scanner_data.csv` (https://www.kaggle.com/datasets/marian447/retail-store-sales-transactions/data): Contains item-level sales transaction data: 
+- `data.csv` (https://www.kaggle.com/datasets/mehmettahiraslan/customer-shopping-dataset/data): Contains retail inventory details like size, department, and units
 
 **Features include:**
 
-- Customer: Age, Gender, Purchase Date
-- Transaction: SKU, Price, Quantity, Date
-- Inventory: Department, Size, Units in stock
+- Customer: Age, Gender, Purchase Date, etc.
+- Transaction: SKU, Price, Quantity, Date, etc.
+- Inventory: Department, Size, Units in stock, etc.
 
 ---
 
@@ -65,13 +65,12 @@ The processed data enables queries and insights such as:
 
 ## 📁 Files in This Repo
 
-- `notebooks/data_pipeline.ipynb`: Jupyter Notebook with all steps and outputs
+- `CustomerPurchaseData.ipynb`: Jupyter Notebook with all steps and outputs
 - `data/customer_shopping_data.csv`: Raw customer data
-- `data/transactions.csv`: Raw transaction data
-- `data/inventory_data.csv`: Raw inventory data
-- `db/customer_purchase_data.db`: SQLite database containing final processed data
+- `scanner_data.csv`: Raw transaction data
+- `data.csv`: Raw inventory data
+- `customer_purchase_data.db`: SQLite database containing final processed data
 - `README.md`: This description file
-- `requirements.txt`: Dependencies for running the project
 
 ---
 
@@ -82,5 +81,3 @@ The processed data enables queries and insights such as:
 - seaborn, matplotlib
 - sqlite3
 - Jupyter Notebook
-
----
